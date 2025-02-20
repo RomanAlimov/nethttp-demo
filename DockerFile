@@ -1,0 +1,6 @@
+FROM golang:latest # образ изображения
+
+COPY ./ ./ #копирует
+
+RUN go build -o main . #запускает изображение
+CMD ["./main"]
